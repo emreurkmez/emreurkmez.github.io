@@ -631,6 +631,34 @@ h1{
 
 
 /* 600px end */  
+/* responsive for mobile */
 
+@media screen and (max-width:600px){
+    .main{
+        display: block !important;
+        
+    }
+    .title h2{
+        color: rgb(249, 248, 248);
+        font-size: 75px;
+        width: 300px;
+        margin-left: 60px;
+        text-align: center;
+    }
+    .fp2{
+        font-size: 15px !important;
+        width: 120px !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+
+/* responsive for mobile */
 
 
