@@ -566,6 +566,12 @@ h1{
     font-size: 50px;
 
 }
+.inf-ser > p {
+    font-size: 20px;
+    color: rgb(240, 5, 5);
+    font-weight: bold;
+    height: 400px !important;;      
+  }
 
 .newslatter form{
     width: 290px;
@@ -657,6 +663,16 @@ h1{
         justify-content: center !important;
         text-align: center !important;
        }
+       .img {
+        position: absolute;
+        transform:translateX(-190px);      
+      }
+      .inf-ser > p {
+        font-size: 20px;
+        color: rgb(240, 5, 5);
+        font-weight: bold;
+        height: 580px !important;
+      }
 }
 
 
