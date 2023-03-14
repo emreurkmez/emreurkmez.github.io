@@ -651,6 +651,12 @@ h1{
         justify-content: center !important;
         text-align: center !important;
     }
+    .about-text p {
+        font-size: 15px !important;
+        width: 420px !important;
+        justify-content: center !important;
+        text-align: center !important;
+       }
 }
 
 
