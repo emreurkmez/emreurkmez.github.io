@@ -1,3 +1,4 @@
+HEAD
 *{
     padding: 0;
     margin: 0;
@@ -687,5 +688,653 @@ button{
 
 
 
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    background: black;
+    
+}
+.mainimg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 120px;
+
+}
+.head{
+    
+    width: 100%;
+    height: 225px;
+    position: absolute;
+    z-index: 12;
+}
+.home-logo{
+    position: absolute;
+  transform: translate(640px,50px);
+  cursor: pointer;
+}
+.material-symbols-outlined{
+    transform: translate(940px,50px);
+    cursor: pointer;
+    font-size: 30px !important;
+
+}
+.driveorride{
+    position: absolute;
+    z-index: 13;
+    font-weight: 400;
+    font-size: 560px;
+    color: #fff;
+    cursor: pointer;
+    padding: 19vw 0 0;   
+}
+.oto{
+    position: absolute;
+    z-index: 13;
+    font-weight: 400;
+    font-size: 506px;
+    color: #fff;
+    cursor: pointer;
+    transform: translate(250px,90px);
+}
+.h2{font-size: 4rem;}
+.moto{
+    transform: translate(1100px,90px);
+    cursor: pointer;
+}
+.honda-btn{
+    position: absolute;
+    z-index: 15;
+    transform: translate(340px,140px);
+    cursor: pointer;
+}
+.civic{
+    width: 688px;
+    height: 480px;
+    object-fit: cover;
+}
+/* contact start */
+a,
+button{
+    display: inline-block;
+    padding: 14px 30px;
+    text-decoration: none;
+    color: #243342;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    border: 1px solid #243342;
+    border-radius: 7px;
+    margin-right: 20px;
+    transition: 0.15s ease-in-out;
+}
+a.focus,
+button{
+    color: white;
+    background: #243342;
+}
+a.focus:hover,
+button:hover{
+	cursor: pointer;
+   color: #1bf1dc;
+}
+a:hover {
+    background-color: #243342;
+    color: #16f1d7;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(36, 51, 66);
+}
+
+
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+nav .hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+}
+nav .hamburger:hover{
+    cursor: pointer;
+}
+
+nav .hamburger:hover span.slice {
+    background-color: #b9bbbd;
+}
+
+nav .hamburger span.slice {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+
+nav.open .hamburger span.cheese.slice {
+    opacity: 0;
+}
+
+nav.open .hamburger span.lettuce.slice {
+    transform-origin: center left;
+    transform: rotate(43deg);
+}
+
+nav.open .hamburger span.beef.slice {
+    transform-origin: center left;
+    transform: rotate(-43deg);
+}
+
+nav.open .linkWrapper {
+    opacity: 1;
+    display: flex;
+    pointer-events: initial;
+}
+
+
+nav h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    border: none;
+    margin: 0;
+}
+a.active {
+    color: #16f1dc;
+    font-weight: 500;
+}
+
+.map{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+.map:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(45deg, rgba(7, 45, 72, 0.8), rgba(195, 195, 195, 0.8));
+}
+
+
+
+
+.content{
+	position: relative;
+	top: 60px;
+	height: calc(100vh - 60px);
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	padding: 20px;
+}
+
+
+.contact{
+	width: 80%;
+	max-width: 1080px;
+	display: flex;
+	 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+
+.other{
+	width: 60%;
+	background-image: url(https://www.honda.com.tr/assets/img/otv/otv-banner.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+
+
+.other:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(45deg, rgb(36, 51, 66), rgba(36, 51, 66, 0.81));
+}
+
+
+
+
+
+
+.form{
+	width: 40%;
+	background-color: rgba(247, 6, 6, 0.456);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+.form h1{
+    color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+		width: 100%;
+}
+
+.flex-rev input, .flex-rev textarea {
+    border: none;
+    background-color: #e6e6e6;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+	 
+}
+.flex-rev textarea{
+	height: 150px;
+}
+button{
+	
+	margin-right: 0;
+}
+
+
+.info {
+    position: relative;
+    padding: 20px;
+}
+
+
+
+.info h2 {
+    color: #16f1dc;
+    font-size: 34px;
+}
+
+.info h3 {
+    color: white;
+    letter-spacing: 1.2px;
+    margin-top:  20px;
+}
+
+.svg-wrap {
+    display: flex;
+    margin-top: 14px;
+}
+
+.svg-wrap a {
+    border: 0;
+    padding: 0;
+    display: flex;
+    color: #bbbbbb;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.svg-wrap a svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+    margin-right: 13px;
+}
+
+.svg-wrap a:hover svg {
+    fill: #16f1dc;
+    cursor: pointer;
+}
+
+.svg-wrap a:hover {
+    background-color: transparent;
+    color: #16f1dc;
+    cursor: pointer;
+}
+
+/* media-------------------------------- */
+
+@media screen and (max-width: 900px){
+	.content{
+		padding: 10px 0 0;
+		display: block;
+	}
+	.map{
+		display: none;
+	}
+	.contact{
+		width: 100%;
+		flex-direction: column-reverse;
+		border-radius: 0;
+		box-shadow: 0px 0px 0px 0px;
+	}
+	.other{
+		width: 100%;
+		padding: 20px 0;
+	}
+	.form{
+		width: 100%;
+	}
+}
+
+@media screen and (max-height: 660px){
+	.content{
+		align-items: flex-start;
+	}
+}
+
+
+@media screen and (max-width: 660px){
+    nav .hamburger{
+        opacity: 1;
+        pointer-events: initial;
+    }
+    nav div.linkWrapper{
+        top: 0;
+        right: 0;
+        position: relative;
+        height: 100vh;
+        background-color: rgba(36, 51, 66, 0.9);
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        justify-content: center;
+        will-change: transform;
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    nav div a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 300;
+        letter-spacing: 1.5;
+        width: 100%;
+        margin-bottom: 31px;
+        text-align: center;
+        font-size: 38px;
+    }
+}
+@media only screen and (max-width: 993px){
+    .home-logo{
+        position: absolute;
+  transform: translate(400px,50px);
+  cursor: pointer;
+    }
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 34px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        transform: translate(750px,50px) !important;
+       
+      }   
+}
+
+@media only screen and (max-width: 1410px){
+ 
+   .photo{
+    width: 1800px;
+    height: auto;
+    object-fit: cover;
+    transform: translateX(-70px);
+
+   }
+   .oto{
+    transform: translate(50px,90px);
+   }
+   .moto{
+    transform: translate(850px,90px);
+   }
+   .honda-btn{
+    transform: translate(250px,120px);
+   }
+   .cbr-h1{
+    transform: translate(80px,-12px);
+   }
+   .cbr-h4{
+    text-align: center;
+    font-size: medium;
+    transform: translate(100px,-12px);
+   }
+}
+@media only screen and (max-width: 1199px){
+    .photo{
+        width: 1400px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(-10px);
+       }
+       .honda-btn{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(260px,140px);
+        cursor: pointer;
+       }
+       .moto{
+        transform: translate(750px,90px);
+       }
+       .lcdg{
+        transform: translate(80px,50px);
+       }
+}
+@media only screen and (max-width: 1000px){
+    .photo{
+        width: 1200px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(30px);
+       }
+       .oto h2{
+        font-size: 40px;
+        transform: translate(90px,-50px);
+       }
+       .moto h2{
+        font-size: 40px;
+        transform: translate(-70px,-50px);
+       }
+       .honda-btn{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(220px,90px);
+        cursor: pointer;
+       }
+       .content2{
+        display: block;
+       }
+       .lcdg{
+        transform: translate(80px,-15px);
+       }
+}
+@media only screen and (max-width: 880px){
+    .photo{
+        width: 965px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(110px);
+       }
+       .oto h2{
+        font-size: 30px;
+        transform: translate(150px,-50px);
+       }
+       .moto h2{
+        font-size: 30px;
+        transform: translate(-110px,-50px);
+       }
+       .honda-btn{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(220px,90px);
+        cursor: pointer;
+       }
+}
+@media only screen and (max-width: 880px){
+    .home-logo{
+        position: absolute;
+  transform: translate(200px,50px);
+  cursor: pointer;
+    }
+    .material-symbols-outlined{
+        transform: translate(500px,50px) !important;
+    }
+    .photo{
+        width: 820px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(110px);
+       }
+       .oto h2{
+        font-size: 30px;
+        transform: translate(120px,-50px);
+       }
+       .honda-btn{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(180px,75px);
+        cursor: pointer;
+       }
+       .moto h2{
+        font-size: 30px;
+        transform: translate(-220px,-50px);
+       }
+}
+@media only screen and (max-width: 880px){
+    .photo{
+        width: 690px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(110px);
+       }
+       .oto h2{
+        font-size: 30px;
+        transform: translate(60px,-70px);
+       }
+       .honda-btn{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(140px,60px);
+        cursor: pointer;
+       }
+       .moto h2{
+        font-size: 30px;
+        transform: translate(-340px,-70px);
+       }
+}
+@media only screen and (max-width: 450px){
+    .photo{
+        width: 490px;
+        height: auto;
+        object-fit: cover;
+        transform: translateX(110px);
+       }
+       .oto h2{
+        font-size: 15px;
+        transform: translate(40px,-70px);
+       }
+       .honda-btn{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 15;
+        transform: translate(105px,60px);
+        cursor: pointer;
+       }
+       .moto h2{
+        font-size: 15px;
+        transform: translate(-430px,-70px);
+       }
+       .home-logo{
+        position: absolute;
+        transform: translate(120px,20px);
+        width: 200px;
+        cursor: pointer;
+        }
+        .content-img img{
+            width: 490px;
+        }
+        .content-img .nkmot{
+            transform: translate(-40px,0px);
+        }
+        .content-img .civic{
+            width: 550px;
+            transform: translateX(-110px);
+        }
+}
 
 /* contact end */
