@@ -1,0 +1,481 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+html,body{
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+.allcontent{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 190px;
+    height: auto;
+}
+.home .mainpic{
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+/* main css start */
+.otomobilediv{
+    display: flex;
+}
+.otomobiletext{
+    z-index: 2;
+    position: absolute;
+    transform: translate(340px,300px);
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    border: none;
+    object-fit: cover;
+    overflow: hidden;
+}
+.motosiklettext{
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+    z-index: 2;
+    position: absolute;
+    transform: translate(1040px,300px);
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+}
+.redbtn{
+    z-index: 2;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+    width: 200px;
+    transform: translate(690px,240px);
+}
+/* main css end */
+/* otomobile & motosiklet css */
+.rightoto{
+    width: 50%;
+}
+.rightoto2{
+    width: 50%;
+}
+.leftoto img{
+   overflow: hidden;
+   width: 100%;
+   padding: 30px;
+}
+.leftoto2{
+    width: 50%;
+}
+.leftoto2 img{
+    overflow: hidden;
+    width: 100%;
+    padding: 30px;
+}
+.rightoto img{
+    overflow: hidden;
+   width: 100%;
+   padding: 30px;
+   
+}
+.leftmoto{
+    width: 50%;
+}
+.rightotom{
+    width: 50%;
+}
+.rightotom img{
+    overflow: hidden;
+    width: 100%;
+    padding: 30px;
+}
+.leftmotom{
+    width: 50%;
+}
+/* otomobile & motosiklet */
+
+/* contact css */
+a,
+button{
+    border: none;
+    display: inline-block;
+    padding: 14px 30px;
+    text-decoration: none;
+    color: #243342;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    border: 1px solid #243342;
+    border-radius: 7px;
+    margin-right: 20px;
+    transition: 0.15s ease-in-out;
+}
+a.focus,
+button{border: none;
+    color: white;
+    background: #243342;
+}
+a.focus:hover,
+button:hover{
+	cursor: pointer;
+   color: #1bf1dc;
+}
+a:hover {
+    background-color: #243342;
+    color: #16f1d7;
+}
+
+a.active {
+    color: #16f1dc;
+    font-weight: 500;
+}
+
+.content{
+	top: 60px;
+	height: calc(100vh - 60px);
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	padding: 20px;
+}
+
+
+.contact{
+	width: 80%;
+	max-width: 1080px;
+	display: flex;
+	 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+
+.other{
+	width: 60%;
+	background-image: url(https://images.unsplash.com/photo-1485119584289-30ca2b38c67e?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+}
+
+
+.other:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(45deg, rgb(36, 51, 66), rgba(36, 51, 66, 0.81));
+}
+
+.form{
+	width: 40%;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+.form h1{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+		width: 100%;
+}
+
+.flex-rev input, .flex-rev textarea {
+    border: none;
+    background-color: #e6e6e6;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+}
+.flex-rev textarea{
+	height: 150px;
+}
+button{
+	
+	margin-right: 0;
+}
+
+
+.info {
+    position: relative;
+    padding: 20px;
+}
+
+
+
+.info h2 {
+    color: #16f1dc;
+    font-size: 34px;
+}
+
+.info h3 {
+    color: white;
+    letter-spacing: 1.2px;
+    margin-top:  20px;
+}
+
+.svg-wrap {
+    display: flex;
+    margin-top: 14px;
+}
+
+.svg-wrap a {
+    border: 0;
+    padding: 0;
+    display: flex;
+    color: #bbbbbb;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.svg-wrap a svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+    margin-right: 13px;
+}
+
+.svg-wrap a:hover svg {
+    fill: #16f1dc;
+    cursor: pointer;
+}
+
+.svg-wrap a:hover {
+    background-color: transparent;
+    color: #16f1dc;
+    cursor: pointer;
+}
+/* contact css  */
+/* media start */
+
+@media screen and (max-width: 900px){
+	.content{
+		padding: 10px 0 0;
+		display: block;
+	}
+
+	.contact{
+		width: 100%;
+		flex-direction: column-reverse;
+		border-radius: 0;
+		box-shadow: 0px 0px 0px 0px;
+	}
+	.other{
+		width: 100%;
+		padding: 20px 0;
+	}
+	.form{
+		width: 100%;
+	}
+}
+
+@media screen and (max-height: 660px){
+	.content{
+		align-items: flex-start;
+	}
+}
+@media screen and (max-width: 1366px){
+    .otomobiletext{
+        z-index: 2;
+        position: absolute;
+        transform: translate(140px,300px);
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        border: none;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .motosiklettext{
+        object-fit: cover;
+        overflow: hidden;
+        border: none;
+        z-index: 2;
+        position: absolute;
+        transform: translate(840px,300px);
+        text-decoration: none;
+        color: white;
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+    }
+    .redbtn{
+        z-index: 2;
+        overflow: hidden;
+        object-fit: cover;
+        position: absolute;
+        display: block;
+        width: 200px;
+        transform: translate(590px,240px);
+    }
+}
+@media screen and (max-width: 1122px){
+    .otomobiletext{
+        transform: translate(140px,200px);
+    }
+    .redbtn{
+        width: 150px;
+        transform: translate(490px,180px);
+    }
+    .motosiklettext{
+        transform: translate(680px,200px);
+        font-size: 50px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: 1012px){
+    .otomobiletext{
+        font-size: 40px;
+    }
+    .redbtn{
+        width: 100px;
+        transform: translate(470px,200px);
+    }
+    .motosiklettext{
+        transform: translate(640px,200px);
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 934px){
+    .motosiklettext{
+        transform: translate(600px,200px);
+    }
+    .redbtn{
+        transform: translate(440px,200px);
+    }
+    .otomobilediv{
+        display: block;
+    }
+   .leftoto2{
+    overflow: hidden;
+    width: 100%;
+   }
+   .rightoto {
+    width: 100%;
+   }
+   .rightoto2{
+    width: 100%;
+   }
+   .leftmoto{
+    width: 100%;
+    margin: 10px;
+   }
+   .leftmotom{
+    width: 100%;
+   }
+   .rightotom{
+    width: 100%;
+   }  
+}
+@media screen and (max-width: 874px){
+    .motosiklettext{
+        transform: translate(590px,200px);
+        font-size: 20px;
+    }
+    .otomobiletext{
+        font-size: 20px;
+    }
+    .redbtn{
+        transform: translate(410px,200px);
+    }
+}
+@media screen and (max-width: 756px){
+    .motosiklettext{
+        transform: translate(470px,150px);
+    }
+    .otomobiletext{
+        transform: translate(120px,150px);
+    }
+    .redbtn{
+        transform: translate(340px,130px);
+    }
+}
+@media screen and (max-width: 756px){
+    .otomobiletext{
+        transform: translate(100px,130px);
+    }
+    .motosiklettext{
+        transform: translate(380px,130px);
+    }
+    .redbtn{
+        width: 70px;
+        transform: translate(290px,130px);
+    }
+}
+@media screen and (max-width: 538px){
+    .otomobiletext{
+        font-size: 14px;
+        transform: translate(100px,100px);
+    }
+    .redbtn{
+        transform: translate(250px,90px);
+        width: 60px;
+    }
+    .motosiklettext{
+        transform: translate(320px,100px);
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 429px){
+    .otomobiletext{
+        display: none;
+    }
+    .motosiklettext{
+        display: none;
+    }
+    .redbtn{
+        transform: translate(200px,110px);
+        width: 60px;
+    }
+}
+@media screen and (max-width: 376px){
+    .redbtn{
+        transform: translate(175px,110px);
+        width: 50px;
+    }
+}
+
