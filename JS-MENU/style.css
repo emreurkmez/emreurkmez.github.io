@@ -92,4 +92,5 @@ h1{
 }
 .hvr:hover{
     background-color: beige;
+    cursor: pointer;
 }
