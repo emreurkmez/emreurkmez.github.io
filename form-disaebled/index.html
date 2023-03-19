@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Disabled</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="adress"><h3>Adress:</h3></label>
+        <input type="text" id="adress" adress="adress" value="İSTANBUL/BAKIRKÖY">
+        <label for="password"><h3>Password:</h3></label>
+        <input type="password"id="password" password="password" value="merhaba"><br>
+        <input type="button" onclick="dontClick()" value="Sakın Basma!!!">
+    </form>
+
+
+    <script>
+      var passwordDive = document.getElementById("password")
+      var adressDive=document.getElementById("adress")
+
+  function dontClick(){
+   if(passwordDive.disabled===false){
+    document.getElementById("password").disabled=true;
+   }else if(passwordDive.disabled===true){
+    document.getElementById("password").disabled=false;
+   }
+   if(adressDive.disabled===false){
+    document.getElementById("adress").disabled=true;
+   }else if(adressDive.disabled===true){
+    document.getElementById("adress").disabled=false;
+   }
+  }
+
+    
+</script>
+</body>
+</html>
